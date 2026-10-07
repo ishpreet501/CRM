@@ -177,6 +177,15 @@ export default function Login() {
             </svg>
             Sign in with Google
           </button>
+
+          <button
+            type="button"
+            onClick={handleGoogleDemoLogin}
+            disabled={googleLoading}
+            className="w-full flex items-center justify-center gap-2 border border-dashed border-slate-300 py-2 rounded-lg text-xs font-medium text-slate-600 hover:bg-slate-50 transition disabled:opacity-60"
+          >
+            {googleLoading ? "Signing in..." : "⚡ Quick Demo Sign-In (Bypass Google Cloud)"}
+          </button>
         </div>
 
         <p className="text-center text-sm text-slate-500 mt-6">
